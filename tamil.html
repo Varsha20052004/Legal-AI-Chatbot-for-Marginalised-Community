@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Front End</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        
+        color: rgb(4, 4, 4);
+        padding: 30px 0;
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        z-index: 1; /* Ensure the header is on top */
+    }
+    .header-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-links a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        margin: 0 20px;
+    }
+    .container {
+        background-image: url(2024-03-17-08-54-52.png); /* Background image for container */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-top: 100px; /* Adjust padding to push content below the header */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh; /* Set container height to viewport height */
+    }
+    .dashboard-heading {
+    margin-bottom: -60px; /* Decreased margin-bottom to move text higher */
+    margin-top: -60px; /* Decreased margin-top to move text higher */
+}
+    .dashboard {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: -60px;
+        margin-top: -60px;
+    }
+    .box {
+        width: 250px; /* Increased width */
+        height: 150px; /* Increased height */
+        border: 1px solid #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.5); /* Added a semi-transparent white background to boxes */
+    }
+    .language-options {
+        display: flex;
+        justify-content: flex-end; /* Align items to the right */
+        align-items: center;
+        margin-right: 20px; /* Add some right margin for spacing */
+    }
+    .language-link {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        margin: 0 10px; /* Add margin between language links */
+    }
+    a {
+    color: inherit; /* Use the default text color */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    color: inherit; /* Use the default text color on hover */
+    text-decoration: none; /* Remove underline on hover */
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <div class="header-links">
+        <a href="#"><b>முகப்பு</b></a>
+        <a href="#"><b>குறிப்பு</b></a>
+        <a href="#"><b>அழைப்பு</b></a>
+    </div>
+    <div class="language-options">
+        <a href="edii.html" class="language-link"><b>English</b></a>
+        <a href="tamil.html" class="language-link"><b>தமிழ்</b></a>
+    </div>
+</header>
+
+<div class="container">
+    <div class="dashboard-heading">
+        
+    </div>
+    <div class="dashboard">
+        <a href="profile.html" class="box"> <!-- Anchor tag wraps the entire box -->
+            <h2>சுயவிவரம்</h2>
+        </a>
+        <div class="box">
+            <a href="SALTAMIL.html">
+                <h2>சமூக நலத்திட்டங்கள்</h2>
+            </a>
+        </div>
+        
+        <div class="box">
+            <a href="https://mc-chatbot.zapier.app/">
+                <h2>உரையாடல்</h2>
+            </a>
+        </div>
+    </div>
+    
+    
+</div>
+
+</body>
+</html>
